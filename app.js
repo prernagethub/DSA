@@ -127,8 +127,115 @@ console.log(Math.random());  //random number between 0 to 1
 
 console.log(Math.trunc(Math.random() * 9000) + 1000);
 
+// ................................................................................. 
+
 let x = 3.566765;
 console.log(x.toFixed(3));  //3.567 (.)dot k baad kitne number chaiye , type will be string.
+
+//valid voter.....................................................
+// let ans = "harsh";
+
+// if (isNaN(ans)) {
+//   console.log("wrong input")
+
+// } else if (ans >= 18) {
+//   console.log("you can vote")
+
+// } else {
+//   console.log("you can not vote")
+
+// };
+
+
+//shop discount......................................................
+let amount = 10000;
+let discount = 0;
+
+if (amount > 0 && amount <= 5000) {
+  console.log("No discount");
+} else if (amount > 5001 && amount <= 7000) {
+  discount = 5
+  // console.log(amount - Math.floor((amount * 5) / 100));      //payable amount after discount
+} else if (amount > 7001 && amount <= 9000) {
+  discount = 10
+  // console.log(amount - Math.floor((amount * 10) / 100));     //payable amount after discount
+} else if (amount > 9001) {
+  discount = 20
+  // console.log(amount - Math.floor((amount * 20) / 100));      //payable amount after discount
+}
+
+console.log(amount - Math.floor((amount * discount) / 100));      //payable amount after discount
+
+
+// bijli bill.........................................................
+
+// let unit = 123;
+// let money = 0;
+
+// if (unit > 400) {
+//   money = (unit - 400) * 13;
+//   unit = 400;
+// }
+// if (unit > 200 && unit <= 400) {
+//   money = (unit - 200) * 8;
+//   unit = 200;
+// }
+// if (unit > 100 && unit <= 200) {
+//   money = (unit - 100) * 6;
+//   unit = 100;
+// }
+
+// money += unit * 4;
+// console.log(money);
+
+
+// INR DEMONITIZATION.........................
+
+let Rupees = 5231;
+
+if (Rupees >= 500) {
+  console.log("500 notes  = ", (Math.floor(Rupees / 500)));
+  Rupees = Rupees % 500;
+
+} if (Rupees >= 200) {
+  console.log("200 notes = ", (Math.floor(Rupees / 200)));
+  Rupees = Rupees % 200;
+
+} if (Rupees >= 100) {
+  console.log("100 notes = ", (Math.floor(Rupees / 100)));
+  Rupees = Rupees % 100;
+
+} if (Rupees >= 50) {
+  console.log("50 notes= ", (Math.floor(Rupees / 50)));
+  Rupees = Rupees % 50;
+
+} if (Rupees >= 20) {
+  console.log("20 notes = ", (Math.floor(Rupees / 20)));
+  Rupees = Rupees % 20;
+
+} if (Rupees >= 10) {
+  console.log("10 notes= ", (Math.floor(Rupees / 10)));
+  Rupees = Rupees % 10;
+
+} if (Rupees >= 5) {
+  console.log("10 notes= ", (Math.floor(Rupees / 5)));
+  Rupees = Rupees % 5;
+
+} if (Rupees >= 2) {
+  console.log("10 notes= ", (Math.floor(Rupees / 2)));
+  Rupees = Rupees % 2;
+} if (Rupees === 1) {
+  console.log("1 rupees = ", Rupees);
+
+}
+
+
+
+// console.log(Rupees);
+
+
+
+
 
 
 
