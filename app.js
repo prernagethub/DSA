@@ -132,7 +132,9 @@ console.log(Math.trunc(Math.random() * 9000) + 1000);
 let x = 3.566765;
 console.log(x.toFixed(3));  //3.567 (.)dot k baad kitne number chaiye , type will be string.
 
-//valid voter.....................................................
+// day2..............................................................conditional statements.........
+
+//valid voter.....................
 // let ans = "harsh";
 
 // if (isNaN(ans)) {
@@ -229,9 +231,195 @@ if (Rupees >= 500) {
 
 }
 
+// ternary oprator.............................
+
+// condition ? true : false
+
+console.log(120 > 13 ? "bilkul" : "ji nhi");
+
+//nested ternary oprator..............................
+
+let num = 0;
+console.log(num > 0 ? "ha ji positive hai" : num < 0 ? "mai negative hu" : "zero hu");
+
+//switch case............................................
+
+let day = 3;
+
+switch (day) {
+  case 1:
+    console.log("monday");
+    break
+  case 2:
+    console.log("tues");
+    break
+  case 3:
+    console.log("wed");
+    break
+
+  default:
+    console.log("invalid input");
 
 
-// console.log(Rupees);
+}
+
+
+//..............................................................
+
+let month = 11;
+
+switch (month) {
+  case 1:
+  case 6:
+  case 3:
+  case 4:
+  case 5:
+    console.log("31 days");
+
+    break
+
+  case 7:
+  case 8:
+  case 9:
+  case 10:
+  case 11:
+  case 12:
+    console.log("30 days");
+    break
+
+  default:
+    console.log("28 days");
+
+}
+
+//............................................................
+
+
+switch (true) {
+  case 18 < 4:
+    console.log("am bigger");
+
+
+    //dono condition true hui to sbse uper bali ko priority milegi
+    break
+  case 48 > 4:
+    console.log("am bigger");
+    break
+
+
+}
+
+
+
+// day3.............................................LOOPS.................................................
+
+
+for (i = 1; i < 10; i++) {
+  console.log('Hello');
+
+}
+
+// for (i = 200; i >= 1; i--) {    //js engine phle "initialization" check krega then "condition" then" log "krega then 
+//   console.log(i);               //"increament" hoga....
+// }
+
+// .................................
+
+// for (i = 1; i<=10; i++){
+//   console.log(i);
+// }
+// console.log("fail",i);
+
+// .................................
+// var i = 1;
+// for (; i<=10; i++){
+//   console.log(i);
+// }
+// console.log("faill",i);
+
+//...................................
+
+// let i = 1;
+
+// for (; i<=10; i++){                          //SyntaxError: Identifier 'i' has already been declared
+//   console.log(i);
+// }
+// console.log("faill",i);
+
+
+//...................................
+
+// for(;;){
+//   console.log("hello");   //valid loop but infinite loop 
+// }
+
+
+
+// for(i =1 ;;){
+//   console.log("hello");   //valid loop but infinite loop 
+// }
+
+
+
+// for(i =1; i<10;){
+//   console.log("hello");   //valid loop but infinite loop
+
+// }
+
+
+
+//............................QUESTIONS.............................
+
+
+//sum of n numbers..
+//n means 1 se koi number tak (user will tell)
+
+// let n = -12;
+
+// if (isNaN(n)) {
+//   console.log("wrong input");   //let n = "harsh";
+// }
+// else {
+//   if (n > 0) {
+//     sum = 0;                        //for storing the sum
+//     for (i = 0; i <= n; i++) {
+//       sum = sum + i;
+//     }
+//     console.log(sum);
+//   }
+//   else {
+//     console.log("should be +ve and more than 0");  //let n = -12;
+
+//   }
+// }
+
+//....................................................................
+
+// var pr = prompt("kitna");
+var pr = 12;
+
+if (pr === null) {
+  console.log("cancelled");
+}
+else {
+
+  var nm = Number(pr);
+
+  if (isNaN(nm)) {
+    console.log("wrong input");
+  }
+  else {
+    if (nm > 0) {
+      for (var i = 1; i <= Math.floor(nm / 2); i++) {     //half tk hi krta hai jese 12 ka half 6 , 6 tk krega fr direct 12 se divide krega 
+        if (nm % i === 0) {
+          console.log(i);
+        }
+      }
+      console.log(nm);    //khud se bhi devide krega
+
+    }
+  }
+}
 
 
 
