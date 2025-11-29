@@ -16,7 +16,6 @@
 
 //  2. addition
 
-
 // type casting
 
 // one type to onother type
@@ -31,7 +30,6 @@
 // a = b;
 // b = c;
 // console.log(a, b);
-
 
 //2 .without extra variable......................................
 
@@ -55,7 +53,6 @@
 
 // / sign will always gives coffecient / bhagfal
 // % precentage/mode sign will always gives you remender/sheshfal
-
 
 // oprator..........................................
 
@@ -91,8 +88,6 @@ console.log(10 < 6 || 20 < 7 || 18 > 9);
 // console.log(a);
 // console.log(b);
 
-
-
 // let b = true;    //true = 1  //false = 0
 // c = b++;
 // console.log(c);
@@ -107,30 +102,29 @@ console.log(10 < 6 || 20 < 7 || 18 > 9);
 
 // console.log(b);   //SyntaxError: Invalid left-hand side expression in prefix operation
 
-
 //math functions..................................................................................
 
-console.log(Math.round(10.3));  //10  .5 se niche h to lower value will be the answer
-console.log(Math.round(10.6));  //11   .5 se uper h to upper value will be the answer
-console.log(Math.ceil(10.1));  //11      always upper value
-console.log(Math.floor(10.8));  //10      always lower value
-console.log(Math.trunc(10.867));  //10     . dot k baad ki value htata hai
-console.log(Math.pow(2, 3));  //8         1rs number jispr power rkhni hai 2nd number jitni power rkhni hai
-console.log(Math.sqrt(16));  //4      
-console.log(Math.cbrt(81));  //4
-console.log(Math.abs(-6));  //6        convert -ve into +ve
-console.log(Math.max(4, 6));  //6    
-console.log(Math.min(2, 6));  //2
-console.log(Math.random());  //random number between 0 to 1
+console.log(Math.round(10.3)); //10  .5 se niche h to lower value will be the answer
+console.log(Math.round(10.6)); //11   .5 se uper h to upper value will be the answer
+console.log(Math.ceil(10.1)); //11      always upper value
+console.log(Math.floor(10.8)); //10      always lower value
+console.log(Math.trunc(10.867)); //10     . dot k baad ki value htata hai
+console.log(Math.pow(2, 3)); //8         1rs number jispr power rkhni hai 2nd number jitni power rkhni hai
+console.log(Math.sqrt(16)); //4
+console.log(Math.cbrt(81)); //4
+console.log(Math.abs(-6)); //6        convert -ve into +ve
+console.log(Math.max(4, 6)); //6
+console.log(Math.min(2, 6)); //2
+console.log(Math.random()); //random number between 0 to 1
 
 //Random OTP generator...............................................................
 
 console.log(Math.trunc(Math.random() * 9000) + 1000);
 
-// ................................................................................. 
+// .................................................................................
 
 let x = 3.566765;
-console.log(x.toFixed(3));  //3.567 (.)dot k baad kitne number chaiye , type will be string.
+console.log(x.toFixed(3)); //3.567 (.)dot k baad kitne number chaiye , type will be string.
 
 // day2..............................................................conditional statements.........
 
@@ -148,7 +142,6 @@ console.log(x.toFixed(3));  //3.567 (.)dot k baad kitne number chaiye , type wil
 
 // };
 
-
 //shop discount......................................................
 let amount = 10000;
 let discount = 0;
@@ -156,18 +149,17 @@ let discount = 0;
 if (amount > 0 && amount <= 5000) {
   console.log("No discount");
 } else if (amount > 5001 && amount <= 7000) {
-  discount = 5
+  discount = 5;
   // console.log(amount - Math.floor((amount * 5) / 100));      //payable amount after discount
 } else if (amount > 7001 && amount <= 9000) {
-  discount = 10
+  discount = 10;
   // console.log(amount - Math.floor((amount * 10) / 100));     //payable amount after discount
 } else if (amount > 9001) {
-  discount = 20
+  discount = 20;
   // console.log(amount - Math.floor((amount * 20) / 100));      //payable amount after discount
 }
 
-console.log(amount - Math.floor((amount * discount) / 100));      //payable amount after discount
-
+console.log(amount - Math.floor((amount * discount) / 100)); //payable amount after discount
 
 // bijli bill.........................................................
 
@@ -190,45 +182,44 @@ console.log(amount - Math.floor((amount * discount) / 100));      //payable amou
 // money += unit * 4;
 // console.log(money);
 
-
 // INR DEMONITIZATION.........................
 
 let Rupees = 5231;
 
 if (Rupees >= 500) {
-  console.log("500 notes  = ", (Math.floor(Rupees / 500)));
+  console.log("500 notes  = ", Math.floor(Rupees / 500));
   Rupees = Rupees % 500;
-
-} if (Rupees >= 200) {
-  console.log("200 notes = ", (Math.floor(Rupees / 200)));
+}
+if (Rupees >= 200) {
+  console.log("200 notes = ", Math.floor(Rupees / 200));
   Rupees = Rupees % 200;
-
-} if (Rupees >= 100) {
-  console.log("100 notes = ", (Math.floor(Rupees / 100)));
+}
+if (Rupees >= 100) {
+  console.log("100 notes = ", Math.floor(Rupees / 100));
   Rupees = Rupees % 100;
-
-} if (Rupees >= 50) {
-  console.log("50 notes= ", (Math.floor(Rupees / 50)));
+}
+if (Rupees >= 50) {
+  console.log("50 notes= ", Math.floor(Rupees / 50));
   Rupees = Rupees % 50;
-
-} if (Rupees >= 20) {
-  console.log("20 notes = ", (Math.floor(Rupees / 20)));
+}
+if (Rupees >= 20) {
+  console.log("20 notes = ", Math.floor(Rupees / 20));
   Rupees = Rupees % 20;
-
-} if (Rupees >= 10) {
-  console.log("10 notes= ", (Math.floor(Rupees / 10)));
+}
+if (Rupees >= 10) {
+  console.log("10 notes= ", Math.floor(Rupees / 10));
   Rupees = Rupees % 10;
-
-} if (Rupees >= 5) {
-  console.log("10 notes= ", (Math.floor(Rupees / 5)));
+}
+if (Rupees >= 5) {
+  console.log("10 notes= ", Math.floor(Rupees / 5));
   Rupees = Rupees % 5;
-
-} if (Rupees >= 2) {
-  console.log("10 notes= ", (Math.floor(Rupees / 2)));
+}
+if (Rupees >= 2) {
+  console.log("10 notes= ", Math.floor(Rupees / 2));
   Rupees = Rupees % 2;
-} if (Rupees === 1) {
+}
+if (Rupees === 1) {
   console.log("1 rupees = ", Rupees);
-
 }
 
 // ternary oprator.............................
@@ -240,7 +231,9 @@ console.log(120 > 13 ? "bilkul" : "ji nhi");
 //nested ternary oprator..............................
 
 let num = 0;
-console.log(num > 0 ? "ha ji positive hai" : num < 0 ? "mai negative hu" : "zero hu");
+console.log(
+  num > 0 ? "ha ji positive hai" : num < 0 ? "mai negative hu" : "zero hu"
+);
 
 //switch case............................................
 
@@ -249,20 +242,17 @@ let day = 3;
 switch (day) {
   case 1:
     console.log("monday");
-    break
+    break;
   case 2:
     console.log("tues");
-    break
+    break;
   case 3:
     console.log("wed");
-    break
+    break;
 
   default:
     console.log("invalid input");
-
-
 }
-
 
 //..............................................................
 
@@ -276,7 +266,7 @@ switch (month) {
   case 5:
     console.log("31 days");
 
-    break
+    break;
 
   case 7:
   case 8:
@@ -285,41 +275,32 @@ switch (month) {
   case 11:
   case 12:
     console.log("30 days");
-    break
+    break;
 
   default:
     console.log("28 days");
-
 }
 
 //............................................................
-
 
 switch (true) {
   case 18 < 4:
     console.log("am bigger");
 
-
     //dono condition true hui to sbse uper bali ko priority milegi
-    break
+    break;
   case 48 > 4:
     console.log("am bigger");
-    break
-
-
+    break;
 }
-
-
 
 // day3.............................................LOOPS.................................................
 
-
 for (i = 1; i < 10; i++) {
-  console.log('Hello');
-
+  console.log("Hello");
 }
 
-// for (i = 200; i >= 1; i--) {    //js engine phle "initialization" check krega then "condition" then" log "krega then 
+// for (i = 200; i >= 1; i--) {    //js engine phle "initialization" check krega then "condition" then" log "krega then
 //   console.log(i);               //"increament" hoga....
 // }
 
@@ -346,30 +327,22 @@ for (i = 1; i < 10; i++) {
 // }
 // console.log("faill",i);
 
-
 //...................................
 
 // for(;;){
-//   console.log("hello");   //valid loop but infinite loop 
+//   console.log("hello");   //valid loop but infinite loop
 // }
-
-
 
 // for(i =1 ;;){
-//   console.log("hello");   //valid loop but infinite loop 
+//   console.log("hello");   //valid loop but infinite loop
 // }
-
-
 
 // for(i =1; i<10;){
 //   console.log("hello");   //valid loop but infinite loop
 
 // }
 
-
-
 //............................QUESTIONS.............................
-
 
 //sum of n numbers..
 //n means 1 se koi number tak (user will tell)
@@ -400,23 +373,20 @@ var pr = 12;
 
 if (pr === null) {
   console.log("cancelled");
-}
-else {
-
+} else {
   var nm = Number(pr);
 
   if (isNaN(nm)) {
     console.log("wrong input");
-  }
-  else {
+  } else {
     if (nm > 0) {
-      for (var i = 1; i <= Math.floor(nm / 2); i++) {     //half tk hi krta hai jese 12 ka half 6 , 6 tk krega fr direct 12 se divide krega 
+      for (var i = 1; i <= Math.floor(nm / 2); i++) {
+        //half tk hi krta hai jese 12 ka half 6 , 6 tk krega fr direct 12 se divide krega
         if (nm % i === 0) {
           console.log(i);
         }
       }
-      console.log(nm);    //khud se bhi devide krega
-
+      console.log(nm); //khud se bhi devide krega
     }
   }
 }
@@ -424,23 +394,5 @@ else {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ......................................29-11-2025...............................................
 
