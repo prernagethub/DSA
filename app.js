@@ -296,9 +296,13 @@ switch (true) {
 
 // day3.............................................LOOPS.................................................
 
-for (i = 1; i < 10; i++) {
-  console.log("Hello");
-}
+// for(start; end; change){
+
+// }
+
+// for (i = 1; i < 10; i++) {
+//   console.log("Hello");
+// }
 
 // for (i = 200; i >= 1; i--) {    //js engine phle "initialization" check krega then "condition" then" log "krega then
 //   console.log(i);               //"increament" hoga....
@@ -391,8 +395,21 @@ if (pr === null) {
   }
 }
 
-
-
-
 // ......................................29-11-2025...............................................
 
+//sum of the numbers..
+
+// 1234%10 = 4 (modulu will give you remender)
+//(1234/10) = 123.4
+//math.floor(1234/10) = 123
+
+// let n = 1234;
+// sum = 0;
+
+// while (n > 0) {
+//   rem = n % 10;
+//   sum = sum + rem;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(sum);
