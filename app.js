@@ -426,21 +426,79 @@ if (pr === null) {
 
 //STRONG NUMBERS.....
 
-let n = 145;
-let copy = n;
-let sum = 0;
-while (n > 0) {
-  var rem = n % 10; //145 = 5
-  fact = 1;
-  for (i = 1; i <= rem; i++) {
-    fact = fact * i;
-  }
-  sum = sum + fact;
-  n = Math.floor(n / 10);
-}
+// let n = 145;
+// let copy = n;
+// let sum = 0;
+// while (n > 0) {
+//   var rem = n % 10; //145 = 5
+//   fact = 1;
+//   for (i = 1; i <= rem; i++) {
+//     fact = fact * i;
+//   }
+//   sum = sum + fact;
+//   n = Math.floor(n / 10);
+// }
 
-if (copy === sum) {
-  console.log("strong number");
-} else {
-  console.log("not strong number");
-}
+// if (copy === sum) {
+//   console.log("strong number");
+// } else {
+//   console.log("not strong number");
+// }
+
+//............do while..................1 baar chlega loop , condition baad mai check hogi...
+
+//repeat hello
+
+// let n;
+// do {
+//   n = Number(prompt("Enter a non-zero number"));
+// } while (n !== 0);
+
+// console.log("Done! You entered:", n);
+
+//........GUESS THE NUMBER GAME..................
+
+// let random = Math.floor(Math.random() * 100) + 1;
+// // console.log(random);
+
+// let guess = -1;
+
+// while (guess !== random) {
+//   guess = Number(prompt("Guess the number"));
+//   if (isNaN(guess) || guess < 1 || guess > 100) {
+//     console.log("try again");
+//     continue;
+//   }
+//   if (guess > random) {
+//     console.log("number is too high");
+//   } else if (guess < random) {
+//     console.log("number is too low");
+//   } else {
+//     console.log("congrate you got the right number:", guess);
+//   }
+// }
+
+
+
+ let random = Math.floor(Math.random() * 100) + 1;
+    let attempt = 0;
+
+    function checkGuess() {
+      let guess = Number(document.getElementById("input").value);
+      attempt++;
+
+      if (!guess || guess < 1 || guess > 100) {
+        document.getElementById("message").innerText = "❌ Enter a valid number between 1-100";
+        return;
+      }
+
+      if (guess > random) {
+        document.getElementById("message").innerText = "📈 Too High!";
+      } else if (guess < random) {
+        document.getElementById("message").innerText = "📉 Too Low!";
+      } else {
+        document.getElementById("message").innerText = `🎉 Correct! Number was ${random}`;
+      }
+
+      document.getElementById("attempts").innerText = `Attempts: ${attempt}`;
+    }
