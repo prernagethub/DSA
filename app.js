@@ -424,4 +424,23 @@ if (pr === null) {
 
 // console.log(rev);
 
+//STRONG NUMBERS.....
 
+let n = 145;
+let copy = n;
+let sum = 0;
+while (n > 0) {
+  var rem = n % 10; //145 = 5
+  fact = 1;
+  for (i = 1; i <= rem; i++) {
+    fact = fact * i;
+  }
+  sum = sum + fact;
+  n = Math.floor(n / 10);
+}
+
+if (copy === sum) {
+  console.log("strong number");
+} else {
+  console.log("not strong number");
+}
