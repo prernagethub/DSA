@@ -478,27 +478,113 @@ if (pr === null) {
 //   }
 // }
 
+let random = Math.floor(Math.random() * 100) + 1;
+let attempt = 0;
 
+function checkGuess() {
+  let guess = Number(document.getElementById("input").value);
+  attempt++;
 
- let random = Math.floor(Math.random() * 100) + 1;
-    let attempt = 0;
+  if (!guess || guess < 1 || guess > 100) {
+    document.getElementById("message").innerText =
+      "❌ Enter a valid number between 1-100";
+    return;
+  }
 
-    function checkGuess() {
-      let guess = Number(document.getElementById("input").value);
-      attempt++;
+  if (guess > random) {
+    document.getElementById("message").innerText = "📈 Too High!";
+  } else if (guess < random) {
+    document.getElementById("message").innerText = "📉 Too Low!";
+  } else {
+    document.getElementById(
+      "message"
+    ).innerText = `🎉 Correct! Number was ${random}`;
+  }
 
-      if (!guess || guess < 1 || guess > 100) {
-        document.getElementById("message").innerText = "❌ Enter a valid number between 1-100";
-        return;
-      }
+  document.getElementById("attempts").innerText = `Attempts: ${attempt}`;
+}
 
-      if (guess > random) {
-        document.getElementById("message").innerText = "📈 Too High!";
-      } else if (guess < random) {
-        document.getElementById("message").innerText = "📉 Too Low!";
-      } else {
-        document.getElementById("message").innerText = `🎉 Correct! Number was ${random}`;
-      }
+//array.... array is a linear DS, which store values in a continous manner.
 
-      document.getElementById("attempts").innerText = `Attempts: ${attempt}`;
-    }
+// let arr = new Array(5);
+
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = Number(prompt("enter the number"));
+// }
+
+// console.log(arr);
+
+//sum of n elements......
+
+// let arry = [1, 2, 3, 4, 5, 6];
+// let sum = 0;
+// for (i = 0; i < arry.length; i++) {
+//   sum += arry[i];
+// }
+
+// console.log(sum);
+
+//////////////////////////////////////////////////////////////////////////
+
+// max in the array........
+
+// let arry = [1, 124, 3, 12, 5, 6];
+// let max = arry[0];
+// for (i = 0; i < arry.length; i++) {
+//   if (arry[i] > max) {
+//     max = arry[i];
+//   }
+// }
+
+// console.log(max);
+
+//////////////////////////////////////////////////////////////////////////
+
+// 2nd max in the array........
+
+// let arry = [1, 124, 124, 122, 532, 6];
+// let max = arry[0];
+// let secondMax = arry[1];
+
+// for (i = 0; i < arry.length; i++) {
+//   if (arry[i] > max) {
+//     secondMax = max;
+//     max = arry[i];
+//   } else if (arry[i] > secondMax && arry[i] != max) {
+//     secondMax = arry[i];
+//   }
+// }
+
+// console.log("max---->", max);
+// console.log("2nd max---->", secondMax);
+
+//reverse with extra space........
+
+// let arry = [1, 2, 3, 4, 5, 6];
+// let tempArray = new Array(arry.length);
+
+// let j = 0;
+// for (i = arry.length - 1; i >= 0; i--) {
+//   tempArray[j] = arry[i];
+//   j++;
+// }
+
+// console.log(tempArray);
+
+//reverse without extra space........
+
+let arry = [1, 2, 3, 4, 5, 6];
+
+let p1 = 0;
+let p2 = arry.length - 1;
+
+while (p1 < p2) {
+  let temp = arry[p1];
+  arry[p1] = arry[p2];
+  arry[p2] = temp;
+
+  p1++;
+  p2--;
+}
+
+console.log(arry);
