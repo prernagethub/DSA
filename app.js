@@ -573,18 +573,49 @@ function checkGuess() {
 
 //reverse without extra space........
 
-let arry = [1, 2, 3, 4, 5, 6];
+// let arry = [1, 2, 3, 4, 5, 6];
 
-let p1 = 0;
-let p2 = arry.length - 1;
+// let p1 = 0;
+// let p2 = arry.length - 1;
 
-while (p1 < p2) {
-  let temp = arry[p1];
-  arry[p1] = arry[p2];
-  arry[p2] = temp;
+// while (p1 < p2) {
+//   let temp = arry[p1];
+//   arry[p1] = arry[p2];
+//   arry[p2] = temp;
 
-  p1++;
-  p2--;
-}
+//   p1++;
+//   p2--;
+// }
 
-console.log(arry);
+// console.log(arry);
+
+//zeros and ones..................
+
+// let arr = [1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1];;
+
+// let j = 0; // pointer for placing 1s
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]]; // swap
+//     j++;
+//   }
+// }
+
+// console.log(arr);
+
+//neagative on the left positove on the right...........
+
+
+// let arr = [1, -1, 2, -3, 4, -5, -6, 1];
+
+// let j = 0; // pointer for placing 1s
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < 0) {
+//     [arr[i], arr[j]] = [arr[j], arr[i]]; // swap
+//     j++;
+//   }
+// }
+
+// console.log(arr);
