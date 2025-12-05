@@ -606,7 +606,6 @@ switch (month) {
 
 //neagative on the left positove on the right...........
 
-
 // let arr = [1, -1, 2, -3, 4, -5, -6, 1];
 
 // let j = 0; // pointer for placing 1s
@@ -619,5 +618,41 @@ switch (month) {
 // }
 
 // console.log(arr);
+
+//left roatation by 1 element........................
+
+// let arry = [1, 2, 3, 4, 5, 6];
+
+// let copy = arry[0];
+// for (i = 0; i < arry.length - 1; i++) {
+//   arry[i] = arry[i + 1];
+// }
+// arry[arry.length - 1] = copy;
+// console.log(arry);
+
+//right roatation by 1 element........................
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let copy = arr[arr.length - 1];
+// // console.log(copy);
+
+// for (i = arr.length - 1; i > 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
+
+// arr[0] = copy;
+
+// console.log(arr);
+
+// nested looping..................increament baad mai hota h phele log chl jyega fir increment hoga
+
+for (i = 1; i <= 4; i++) {
+  console.log(i, "excution");
+  for (j = 1; j <= 3; j++) {
+    console.log("hello");
+  }
+}
+
 
 
