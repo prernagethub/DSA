@@ -283,16 +283,16 @@ switch (month) {
 
 //............................................................
 
-switch (true) {
-  case 18 < 4:
-    console.log("am bigger");
+// switch (true) {
+//   case 18 < 4:
+//     console.log("am bigger");
 
-    //dono condition true hui to sbse uper bali ko priority milegi
-    break;
-  case 48 > 4:
-    console.log("am bigger");
-    break;
-}
+//     //dono condition true hui to sbse uper bali ko priority milegi
+//     break;
+//   case 48 > 4:
+//     console.log("am bigger");
+//     break;
+// }
 
 // day3.............................................LOOPS.................................................
 
@@ -373,27 +373,27 @@ switch (true) {
 //....................................................................
 
 // var pr = prompt("kitna");
-var pr = 12;
+// var pr = 12;
 
-if (pr === null) {
-  console.log("cancelled");
-} else {
-  var nm = Number(pr);
+// if (pr === null) {
+//   console.log("cancelled");
+// } else {
+//   var nm = Number(pr);
 
-  if (isNaN(nm)) {
-    console.log("wrong input");
-  } else {
-    if (nm > 0) {
-      for (var i = 1; i <= Math.floor(nm / 2); i++) {
-        //half tk hi krta hai jese 12 ka half 6 , 6 tk krega fr direct 12 se divide krega
-        if (nm % i === 0) {
-          console.log(i);
-        }
-      }
-      console.log(nm); //khud se bhi devide krega
-    }
-  }
-}
+//   if (isNaN(nm)) {
+//     console.log("wrong input");
+//   } else {
+//     if (nm > 0) {
+//       for (var i = 1; i <= Math.floor(nm / 2); i++) {
+//         //half tk hi krta hai jese 12 ka half 6 , 6 tk krega fr direct 12 se divide krega
+//         if (nm % i === 0) {
+//           console.log(i);
+//         }
+//       }
+//       console.log(nm); //khud se bhi devide krega
+//     }
+//   }
+// }
 
 // ......................................29-11-2025...............................................
 
@@ -478,31 +478,31 @@ if (pr === null) {
 //   }
 // }
 
-let random = Math.floor(Math.random() * 100) + 1;
-let attempt = 0;
+// let random = Math.floor(Math.random() * 100) + 1;
+// let attempt = 0;
 
-function checkGuess() {
-  let guess = Number(document.getElementById("input").value);
-  attempt++;
+// function checkGuess() {
+//   let guess = Number(document.getElementById("input").value);
+//   attempt++;
 
-  if (!guess || guess < 1 || guess > 100) {
-    document.getElementById("message").innerText =
-      "❌ Enter a valid number between 1-100";
-    return;
-  }
+//   if (!guess || guess < 1 || guess > 100) {
+//     document.getElementById("message").innerText =
+//       "❌ Enter a valid number between 1-100";
+//     return;
+//   }
 
-  if (guess > random) {
-    document.getElementById("message").innerText = "📈 Too High!";
-  } else if (guess < random) {
-    document.getElementById("message").innerText = "📉 Too Low!";
-  } else {
-    document.getElementById(
-      "message"
-    ).innerText = `🎉 Correct! Number was ${random}`;
-  }
+//   if (guess > random) {
+//     document.getElementById("message").innerText = "📈 Too High!";
+//   } else if (guess < random) {
+//     document.getElementById("message").innerText = "📉 Too Low!";
+//   } else {
+//     document.getElementById(
+//       "message"
+//     ).innerText = `🎉 Correct! Number was ${random}`;
+//   }
 
-  document.getElementById("attempts").innerText = `Attempts: ${attempt}`;
-}
+//   document.getElementById("attempts").innerText = `Attempts: ${attempt}`;
+// }
 
 //array.... array is a linear DS, which store values in a continous manner.
 
@@ -619,3 +619,5 @@ function checkGuess() {
 // }
 
 // console.log(arr);
+
+
