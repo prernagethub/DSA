@@ -654,5 +654,42 @@ for (i = 1; i <= 4; i++) {
   }
 }
 
+//left rotation by k..................................brute force
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let k = Number([prompt("Enter the value")]);
+// k = k % arr.length; //edge case - jab k ki value 7 ho to 2 baar hi chlega un-neccary nhi chlega
+
+// for (j = 0; j < k; j++) {
+//   let copy = arr[0];
+//   for (i = 0; i < arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];
+//   }
+//   arr[arr.length - 1] = copy;
+// }
+
+// console.log(arr);
+
+////left rotation by k.................
+
+// let arr = [1, 2, 3, 4, 5];
+// let temp = new Array(arr.length);
+// // let k = Number([prompt("Enter the value")]);
+// k = k % arr.length;
+
+// for (i = 0; i < arr.length; i++) {
+//   temp[i] = arr[(i + k) % arr.length];
+// }
+
+// console.log(temp);
 
 
+// dry run
+
+// | i | (i + k) % 5     | arr[(i + k) % 5] | temp[i] update | temp array after update |
+// | - | --------------- | ---------------- | -------------- | ----------------------- |
+// | 0 | (0 + 2) % 5 = 2 | arr[2] = 3       | temp[0] = 3    | [3, ?, ?, ?, ?]         |
+// | 1 | (1 + 2) % 5 = 3 | arr[3] = 4       | temp[1] = 4    | [3, 4, ?, ?, ?]         |
+// | 2 | (2 + 2) % 5 = 4 | arr[4] = 5       | temp[2] = 5    | [3, 4, 5, ?, ?]         |
+// | 3 | (3 + 2) % 5 = 0 | arr[0] = 1       | temp[3] = 1    | [3, 4, 5, 1, ?]         |
+// | 4 | (4 + 2) % 5 = 1 | arr[1] = 2       | temp[4] = 2    | [3, 4, 5, 1, 2]         |
