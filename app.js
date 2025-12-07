@@ -683,7 +683,6 @@ for (i = 1; i <= 4; i++) {
 
 // console.log(temp);
 
-
 // dry run
 
 // | i | (i + k) % 5     | arr[(i + k) % 5] | temp[i] update | temp array after update |
@@ -693,3 +692,41 @@ for (i = 1; i <= 4; i++) {
 // | 2 | (2 + 2) % 5 = 4 | arr[4] = 5       | temp[2] = 5    | [3, 4, 5, ?, ?]         |
 // | 3 | (3 + 2) % 5 = 0 | arr[0] = 1       | temp[3] = 1    | [3, 4, 5, 1, ?]         |
 // | 4 | (4 + 2) % 5 = 1 | arr[1] = 2       | temp[4] = 2    | [3, 4, 5, 1, 2]         |
+
+////right rotation by k.................
+let arr = [1, 2, 3, 4, 5];
+let temp = new Array(arr.length);
+let k = 2;
+k = k % arr.length;
+
+for (let i = 0; i < arr.length; i++) {
+  temp[i] = arr[(i - k + arr.length) % arr.length];
+}
+
+console.log(temp);
+
+//block-swap method for rotation................
+
+// let arr = [1, 2, 3, 4, 5];
+// let k = 3;
+// k = k % arr.length;
+
+// reverse(0, k - 1);
+// reverse(k, arr.length - 1);
+// reverse(0, arr.length - 1);
+// console.log(arr);
+
+// function reverse(i, j) {
+//   while (i < j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+//   }
+// }
+
+
+//..............string....................-07/12/2025
+
+
