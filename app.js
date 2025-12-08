@@ -647,12 +647,12 @@ switch (month) {
 
 // nested looping..................increament baad mai hota h phele log chl jyega fir increment hoga
 
-for (i = 1; i <= 4; i++) {
-  console.log(i, "excution");
-  for (j = 1; j <= 3; j++) {
-    console.log("hello");
-  }
-}
+// for (i = 1; i <= 4; i++) {
+//   console.log(i, "excution");
+//   for (j = 1; j <= 3; j++) {
+//     console.log("hello");
+//   }
+// }
 
 //left rotation by k..................................brute force
 
@@ -726,7 +726,36 @@ console.log(temp);
 //   }
 // }
 
-
 //..............string....................-07/12/2025
 
+//.............merge sorted array....
 
+let arr1 = [2, 4, 6, 7, 8];
+let arr2 = [1, 3, 5, 9, 12];
+let merge = new Array(arr1.length + arr2.length);
+
+let i = (j = k = 0);
+while (i < arr.length && j < arr.length) {
+  if (arr1[i] < arr2[j]) {
+    merge[k] = arr1[i];
+    i++;
+    k++;
+  } else {
+    merge[k] = arr2[j];
+    j++;
+    k++;
+  }
+}
+
+while (j < arr2.length) {
+  merge[k] = arr2[j];
+  k++;
+  j++;
+}
+while (i < arr1.length) {
+  merge[k] = arr1[i];
+  k++;
+  i++;
+}
+
+console.log(merge);
