@@ -694,16 +694,16 @@ switch (month) {
 // | 4 | (4 + 2) % 5 = 1 | arr[1] = 2       | temp[4] = 2    | [3, 4, 5, 1, 2]         |
 
 ////right rotation by k.................
-let arr = [1, 2, 3, 4, 5];
-let temp = new Array(arr.length);
-let k = 2;
-k = k % arr.length;
+// let arr = [1, 2, 3, 4, 5];
+// let temp = new Array(arr.length);
+// let k = 2;
+// k = k % arr.length;
 
-for (let i = 0; i < arr.length; i++) {
-  temp[i] = arr[(i - k + arr.length) % arr.length];
-}
+// for (let i = 0; i < arr.length; i++) {
+//   temp[i] = arr[(i - k + arr.length) % arr.length];
+// }
 
-console.log(temp);
+// console.log(temp);
 
 //block-swap method for rotation................
 
@@ -730,32 +730,47 @@ console.log(temp);
 
 //.............merge sorted array....
 
-let arr1 = [2, 4, 6, 7, 8];
-let arr2 = [1, 3, 5, 9, 12];
-let merge = new Array(arr1.length + arr2.length);
+// let arr1 = [2, 4, 6, 7, 8];
+// let arr2 = [1, 3, 5, 9, 12];
+// let merge = new Array(arr1.length + arr2.length);
 
-let i = (j = k = 0);
-while (i < arr.length && j < arr.length) {
-  if (arr1[i] < arr2[j]) {
-    merge[k] = arr1[i];
-    i++;
-    k++;
-  } else {
-    merge[k] = arr2[j];
+// let i = (j = k = 0);
+// while (i < arr.length && j < arr.length) {
+//   if (arr1[i] < arr2[j]) {
+//     merge[k] = arr1[i];
+//     i++;
+//     k++;
+//   } else {
+//     merge[k] = arr2[j];
+//     j++;
+//     k++;
+//   }
+// }
+
+// while (j < arr2.length) {
+//   merge[k] = arr2[j];
+//   k++;
+//   j++;
+// }
+// while (i < arr1.length) {
+//   merge[k] = arr1[i];
+//   k++;
+//   i++;
+// }
+
+// console.log(merge);
+
+//remove duplicate from sorted array......................
+
+let arr = [1, 1, 2, 2, 3, 3, 3];
+
+j = 1;
+for (i = 0; i < arr.length - 1; i++) {
+  if (arr[i] != arr[i + 1]) {
+    arr[j] = arr[i + 1];
     j++;
-    k++;
   }
 }
 
-while (j < arr2.length) {
-  merge[k] = arr2[j];
-  k++;
-  j++;
-}
-while (i < arr1.length) {
-  merge[k] = arr1[i];
-  k++;
-  i++;
-}
-
-console.log(merge);
+console.log(arr);
+console.log(j);
