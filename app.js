@@ -1,285 +1,285 @@
-//undefind is a value whereas not-defind is a error.
-//console mai value black color mai hai to it would be string and if its blue color then its number.
+// //undefind is a value whereas not-defind is a error.
+// //console mai value black color mai hai to it would be string and if its blue color then its number.
 
-//let a = 12;
-//let b = "13";
+// //let a = 12;
+// //let b = "13";
 
-// console.log(a+b); = concetination.
-// type will be string..
+// // console.log(a+b); = concetination.
+// // type will be string..
 
-// type - corcien
-// console.log("1" + 1); = 11 concate will change the last value into string
-// console.log("1" - 1); = 0 js engine will convert the string into number
+// // type - corcien
+// // console.log("1" + 1); = 11 concate will change the last value into string
+// // console.log("1" - 1); = 0 js engine will convert the string into number
 
-// . +
-//  1. concetination
+// // . +
+// //  1. concetination
 
-//  2. addition
+// //  2. addition
 
-// type casting
+// // type casting
 
-// one type to onother type
+// // one type to onother type
 
-//swaping with 3 method............................................................................
-//1.with extra variable............................................
+// //swaping with 3 method............................................................................
+// //1.with extra variable............................................
 
-// let a = 10;
-// let b = 20;
+// // let a = 10;
+// // let b = 20;
 
-// let c = a;
-// a = b;
-// b = c;
-// console.log(a, b);
+// // let c = a;
+// // a = b;
+// // b = c;
+// // console.log(a, b);
 
-//2 .without extra variable......................................
+// //2 .without extra variable......................................
 
-// let a = 20;
-// let b = 10;
+// // let a = 20;
+// // let b = 10;
 
-// console.log(a = a + b);  //30
+// // console.log(a = a + b);  //30
 
-// console.log(b = a - b);  //20
-// console.log(a = a - b);   //10
+// // console.log(b = a - b);  //20
+// // console.log(a = a - b);   //10
 
-// console.log(a, b);
+// // console.log(a, b);
 
-// 3. with destructuring............................................
+// // 3. with destructuring............................................
 
-// let c = 10;
-// let d = 20;
+// // let c = 10;
+// // let d = 20;
 
-// [c, d] = [d, c]
-// console.log(c, d);
+// // [c, d] = [d, c]
+// // console.log(c, d);
 
-// / sign will always gives coffecient / bhagfal
-// % precentage/mode sign will always gives you remender/sheshfal
+// // / sign will always gives coffecient / bhagfal
+// // % precentage/mode sign will always gives you remender/sheshfal
 
-// oprator..........................................
+// // oprator..........................................
 
-// relational oprators................................
+// // relational oprators................................
 
-// end oprator &&
-// if all condition is true answer will be truee
+// // end oprator &&
+// // if all condition is true answer will be truee
 
-// if pehli condition true/false ho ti aage condition check n krta answer will be true/false hi hoga..
+// // if pehli condition true/false ho ti aage condition check n krta answer will be true/false hi hoga..
 
-// or oprator.......................................................
+// // or oprator.......................................................
 
-console.log(10 < 6 || 20 < 7 || 18 > 9);
+// console.log(10 < 6 || 20 < 7 || 18 > 9);
 
-// 1 bhi true hua to true hi hoga..
-// pehli condition true hai to aage check krne k jrurt nh pdti all will be true.
+// // 1 bhi true hua to true hi hoga..
+// // pehli condition true hai to aage check krne k jrurt nh pdti all will be true.
 
-//uniary oprator......................................................
+// //uniary oprator......................................................
 
-//++   //--
-//post(++x) and pre(x--)
+// //++   //--
+// //post(++x) and pre(x--)
 
-// let i = 12;
+// // let i = 12;
 
-// i = i++ + ++i  //12 + 13+1
-// console.log(i);
+// // i = i++ + ++i  //12 + 13+1
+// // console.log(i);
 
-// let a = 12;
-// let b = 4;
+// // let a = 12;
+// // let b = 4;
 
-// let c = a++ - a-- + ++a - b-- + b++ - a++  //12 - 13 + 14 - 4 + 3 - 14   =  -1 + 10 -11    = -2
-// console.log(c);
-// console.log(a);
-// console.log(b);
+// // let c = a++ - a-- + ++a - b-- + b++ - a++  //12 - 13 + 14 - 4 + 3 - 14   =  -1 + 10 -11    = -2
+// // console.log(c);
+// // console.log(a);
+// // console.log(b);
 
-// let b = true;    //true = 1  //false = 0
-// c = b++;
-// console.log(c);
+// // let b = true;    //true = 1  //false = 0
+// // c = b++;
+// // console.log(c);
 
-//variable par post, pre lga skte hai.
-//number par post, pre nhi lga skte hai.
+// //variable par post, pre lga skte hai.
+// //number par post, pre nhi lga skte hai.
 
-// example.
+// // example.
 
-// let a = 10;
-// let b = ++(a++);  //++(10)
+// // let a = 10;
+// // let b = ++(a++);  //++(10)
 
-// console.log(b);   //SyntaxError: Invalid left-hand side expression in prefix operation
+// // console.log(b);   //SyntaxError: Invalid left-hand side expression in prefix operation
 
-//math functions..................................................................................
+// //math functions..................................................................................
 
-console.log(Math.round(10.3)); //10  .5 se niche h to lower value will be the answer
-console.log(Math.round(10.6)); //11   .5 se uper h to upper value will be the answer
-console.log(Math.ceil(10.1)); //11      always upper value
-console.log(Math.floor(10.8)); //10      always lower value
-console.log(Math.trunc(10.867)); //10     . dot k baad ki value htata hai
-console.log(Math.pow(2, 3)); //8         1rs number jispr power rkhni hai 2nd number jitni power rkhni hai
-console.log(Math.sqrt(16)); //4
-console.log(Math.cbrt(81)); //4
-console.log(Math.abs(-6)); //6        convert -ve into +ve
-console.log(Math.max(4, 6)); //6
-console.log(Math.min(2, 6)); //2
-console.log(Math.random()); //random number between 0 to 1
+// console.log(Math.round(10.3)); //10  .5 se niche h to lower value will be the answer
+// console.log(Math.round(10.6)); //11   .5 se uper h to upper value will be the answer
+// console.log(Math.ceil(10.1)); //11      always upper value
+// console.log(Math.floor(10.8)); //10      always lower value
+// console.log(Math.trunc(10.867)); //10     . dot k baad ki value htata hai
+// console.log(Math.pow(2, 3)); //8         1rs number jispr power rkhni hai 2nd number jitni power rkhni hai
+// console.log(Math.sqrt(16)); //4
+// console.log(Math.cbrt(81)); //4
+// console.log(Math.abs(-6)); //6        convert -ve into +ve
+// console.log(Math.max(4, 6)); //6
+// console.log(Math.min(2, 6)); //2
+// console.log(Math.random()); //random number between 0 to 1
 
-//Random OTP generator...............................................................
+// //Random OTP generator...............................................................
 
-console.log(Math.trunc(Math.random() * 9000) + 1000);
+// console.log(Math.trunc(Math.random() * 9000) + 1000);
 
-// .................................................................................
+// // .................................................................................
 
-let x = 3.566765;
-console.log(x.toFixed(3)); //3.567 (.)dot k baad kitne number chaiye , type will be string.
+// let x = 3.566765;
+// console.log(x.toFixed(3)); //3.567 (.)dot k baad kitne number chaiye , type will be string.
 
-// day2..............................................................conditional statements.........
+// // day2..............................................................conditional statements.........
 
-//valid voter.....................
-// let ans = "harsh";
+// //valid voter.....................
+// // let ans = "harsh";
 
-// if (isNaN(ans)) {
-//   console.log("wrong input")
+// // if (isNaN(ans)) {
+// //   console.log("wrong input")
 
-// } else if (ans >= 18) {
-//   console.log("you can vote")
+// // } else if (ans >= 18) {
+// //   console.log("you can vote")
 
-// } else {
-//   console.log("you can not vote")
+// // } else {
+// //   console.log("you can not vote")
 
-// };
+// // };
 
-//shop discount......................................................
-let amount = 10000;
-let discount = 0;
+// //shop discount......................................................
+// let amount = 10000;
+// let discount = 0;
 
-if (amount > 0 && amount <= 5000) {
-  console.log("No discount");
-} else if (amount > 5001 && amount <= 7000) {
-  discount = 5;
-  // console.log(amount - Math.floor((amount * 5) / 100));      //payable amount after discount
-} else if (amount > 7001 && amount <= 9000) {
-  discount = 10;
-  // console.log(amount - Math.floor((amount * 10) / 100));     //payable amount after discount
-} else if (amount > 9001) {
-  discount = 20;
-  // console.log(amount - Math.floor((amount * 20) / 100));      //payable amount after discount
-}
-
-console.log(amount - Math.floor((amount * discount) / 100)); //payable amount after discount
-
-// bijli bill.........................................................
-
-// let unit = 123;
-// let money = 0;
-
-// if (unit > 400) {
-//   money = (unit - 400) * 13;
-//   unit = 400;
-// }
-// if (unit > 200 && unit <= 400) {
-//   money = (unit - 200) * 8;
-//   unit = 200;
-// }
-// if (unit > 100 && unit <= 200) {
-//   money = (unit - 100) * 6;
-//   unit = 100;
+// if (amount > 0 && amount <= 5000) {
+//   console.log("No discount");
+// } else if (amount > 5001 && amount <= 7000) {
+//   discount = 5;
+//   // console.log(amount - Math.floor((amount * 5) / 100));      //payable amount after discount
+// } else if (amount > 7001 && amount <= 9000) {
+//   discount = 10;
+//   // console.log(amount - Math.floor((amount * 10) / 100));     //payable amount after discount
+// } else if (amount > 9001) {
+//   discount = 20;
+//   // console.log(amount - Math.floor((amount * 20) / 100));      //payable amount after discount
 // }
 
-// money += unit * 4;
-// console.log(money);
+// console.log(amount - Math.floor((amount * discount) / 100)); //payable amount after discount
 
-// INR DEMONITIZATION.........................
+// // bijli bill.........................................................
 
-let Rupees = 5231;
+// // let unit = 123;
+// // let money = 0;
 
-if (Rupees >= 500) {
-  console.log("500 notes  = ", Math.floor(Rupees / 500));
-  Rupees = Rupees % 500;
-}
-if (Rupees >= 200) {
-  console.log("200 notes = ", Math.floor(Rupees / 200));
-  Rupees = Rupees % 200;
-}
-if (Rupees >= 100) {
-  console.log("100 notes = ", Math.floor(Rupees / 100));
-  Rupees = Rupees % 100;
-}
-if (Rupees >= 50) {
-  console.log("50 notes= ", Math.floor(Rupees / 50));
-  Rupees = Rupees % 50;
-}
-if (Rupees >= 20) {
-  console.log("20 notes = ", Math.floor(Rupees / 20));
-  Rupees = Rupees % 20;
-}
-if (Rupees >= 10) {
-  console.log("10 notes= ", Math.floor(Rupees / 10));
-  Rupees = Rupees % 10;
-}
-if (Rupees >= 5) {
-  console.log("10 notes= ", Math.floor(Rupees / 5));
-  Rupees = Rupees % 5;
-}
-if (Rupees >= 2) {
-  console.log("10 notes= ", Math.floor(Rupees / 2));
-  Rupees = Rupees % 2;
-}
-if (Rupees === 1) {
-  console.log("1 rupees = ", Rupees);
-}
+// // if (unit > 400) {
+// //   money = (unit - 400) * 13;
+// //   unit = 400;
+// // }
+// // if (unit > 200 && unit <= 400) {
+// //   money = (unit - 200) * 8;
+// //   unit = 200;
+// // }
+// // if (unit > 100 && unit <= 200) {
+// //   money = (unit - 100) * 6;
+// //   unit = 100;
+// // }
 
-// ternary oprator.............................
+// // money += unit * 4;
+// // console.log(money);
 
-// condition ? true : false
+// // INR DEMONITIZATION.........................
 
-console.log(120 > 13 ? "bilkul" : "ji nhi");
+// let Rupees = 5231;
 
-//nested ternary oprator..............................
+// if (Rupees >= 500) {
+//   console.log("500 notes  = ", Math.floor(Rupees / 500));
+//   Rupees = Rupees % 500;
+// }
+// if (Rupees >= 200) {
+//   console.log("200 notes = ", Math.floor(Rupees / 200));
+//   Rupees = Rupees % 200;
+// }
+// if (Rupees >= 100) {
+//   console.log("100 notes = ", Math.floor(Rupees / 100));
+//   Rupees = Rupees % 100;
+// }
+// if (Rupees >= 50) {
+//   console.log("50 notes= ", Math.floor(Rupees / 50));
+//   Rupees = Rupees % 50;
+// }
+// if (Rupees >= 20) {
+//   console.log("20 notes = ", Math.floor(Rupees / 20));
+//   Rupees = Rupees % 20;
+// }
+// if (Rupees >= 10) {
+//   console.log("10 notes= ", Math.floor(Rupees / 10));
+//   Rupees = Rupees % 10;
+// }
+// if (Rupees >= 5) {
+//   console.log("10 notes= ", Math.floor(Rupees / 5));
+//   Rupees = Rupees % 5;
+// }
+// if (Rupees >= 2) {
+//   console.log("10 notes= ", Math.floor(Rupees / 2));
+//   Rupees = Rupees % 2;
+// }
+// if (Rupees === 1) {
+//   console.log("1 rupees = ", Rupees);
+// }
 
-let num = 0;
-console.log(
-  num > 0 ? "ha ji positive hai" : num < 0 ? "mai negative hu" : "zero hu"
-);
+// // ternary oprator.............................
 
-//switch case............................................
+// // condition ? true : false
 
-let day = 3;
+// console.log(120 > 13 ? "bilkul" : "ji nhi");
 
-switch (day) {
-  case 1:
-    console.log("monday");
-    break;
-  case 2:
-    console.log("tues");
-    break;
-  case 3:
-    console.log("wed");
-    break;
+// //nested ternary oprator..............................
 
-  default:
-    console.log("invalid input");
-}
+// let num = 0;
+// console.log(
+//   num > 0 ? "ha ji positive hai" : num < 0 ? "mai negative hu" : "zero hu"
+// );
 
-//..............................................................
+// //switch case............................................
 
-let month = 11;
+// let day = 3;
 
-switch (month) {
-  case 1:
-  case 6:
-  case 3:
-  case 4:
-  case 5:
-    console.log("31 days");
+// switch (day) {
+//   case 1:
+//     console.log("monday");
+//     break;
+//   case 2:
+//     console.log("tues");
+//     break;
+//   case 3:
+//     console.log("wed");
+//     break;
 
-    break;
+//   default:
+//     console.log("invalid input");
+// }
 
-  case 7:
-  case 8:
-  case 9:
-  case 10:
-  case 11:
-  case 12:
-    console.log("30 days");
-    break;
+// //..............................................................
 
-  default:
-    console.log("28 days");
-}
+// let month = 11;
+
+// switch (month) {
+//   case 1:
+//   case 6:
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log("31 days");
+
+//     break;
+
+//   case 7:
+//   case 8:
+//   case 9:
+//   case 10:
+//   case 11:
+//   case 12:
+//     console.log("30 days");
+//     break;
+
+//   default:
+//     console.log("28 days");
+// }
 
 //............................................................
 
@@ -730,47 +730,57 @@ switch (month) {
 
 //.............merge sorted array....
 
-// let arr1 = [2, 4, 6, 7, 8];
-// let arr2 = [1, 3, 5, 9, 12];
+// let arr1 = [1, 3, 5, 7];
+// let arr2 = [2, 6, 8, 9];
+
 // let merge = new Array(arr1.length + arr2.length);
 
-// let i = (j = k = 0);
-// while (i < arr.length && j < arr.length) {
-//   if (arr1[i] < arr2[j]) {
-//     merge[k] = arr1[i];
-//     i++;
-//     k++;
+// let m = 0,
+//   n = 0,
+//   k = 0;
+
+// while (m < arr1.length && n < arr2.length) {
+//   if (arr1[m] < arr2[n]) {
+//     merge[k] = arr1[m];
+//     m++;
 //   } else {
-//     merge[k] = arr2[j];
-//     j++;
-//     k++;
+//     merge[k] = arr2[n];
+//     n++;
 //   }
+//   k++;
 // }
 
-// while (j < arr2.length) {
-//   merge[k] = arr2[j];
+// // If any elements left in arr1
+// while (m < arr1.length) {
+//   merge[k] = arr1[m];
+//   m++;
 //   k++;
-//   j++;
 // }
-// while (i < arr1.length) {
-//   merge[k] = arr1[i];
+
+// // If any elements left in arr2
+// while (n < arr2.length) {
+//   merge[k] = arr2[n];
+//   n++;
 //   k++;
-//   i++;
 // }
 
 // console.log(merge);
 
+
 //remove duplicate from sorted array......................
 
-let arr = [1, 1, 2, 2, 3, 3, 3];
+// let arr = [1, 1, 2, 2, 3, 3, 3];
 
-j = 1;
-for (i = 0; i < arr.length - 1; i++) {
-  if (arr[i] != arr[i + 1]) {
-    arr[j] = arr[i + 1];
-    j++;
-  }
-}
+// j = 1;
+// for (i = 0; i < arr.length - 1; i++) {
+//   if (arr[i] != arr[i + 1]) {
+//     arr[j] = arr[i + 1];
+//     j++;
+//   }
+// }
 
-console.log(arr);
-console.log(j);
+// console.log(arr);
+// console.log("count of unique element ->", j);
+
+
+
