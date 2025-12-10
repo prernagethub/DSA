@@ -784,3 +784,22 @@
 
 
 
+//best time to buy sell stock.............
+
+//169. Majority Element
+
+// var majorityElement = function(nums) {
+//   let ans = nums[0];
+//   let count = 1;
+//   for(i=1; i<nums.length; i++){
+//     if (nums[i]===ans){
+//         count++
+//     } else if (count === 0){
+//         ans = nums[i]
+//     } else if ( nums[i] != ans){
+//         count--
+//     }
+
+//     }
+//     return ans;
+//   }  
