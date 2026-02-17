@@ -806,20 +806,38 @@
 // Positive or Negative number:
 
 //sorting...................
-//bubble sorting.................
+//.............................bubble sorting.....................................
+
+// let arr = [5, 10, 12, 13, 1];
+// let n = arr.length;
+
+// for (i = 0; i < n - 1; i++) {
+//   for (j = 0; j < n - 1 - i; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+
+//...............................Selection Sorting........................................
 
 let arr = [5, 10, 12, 13, 1];
 let n = arr.length;
 
 for (i = 0; i < n - 1; i++) {
-  for (j = 0; j < n - 1 - i; j++) {
-    if (arr[j] > arr[j + 1]) {
-      temp = arr[j];
-      arr[j] = arr[j + 1];
-      arr[j + 1] = temp;
-    }
+  let minIndex = i;
+  for (j = i + 1; j < n; j++) {
+    if (arr[minIndex] > arr[j]) minIndex = j;
+  }
+  if (minIndex != i) {
+    let temp = arr[minIndex];
+    arr[minIndex] = arr[i];
+    arr[i] = temp;
   }
 }
 
 console.log(arr);
+
 
