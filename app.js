@@ -766,7 +766,6 @@
 
 // console.log(merge);
 
-
 //remove duplicate from sorted array......................
 
 // let arr = [1, 1, 2, 2, 3, 3, 3];
@@ -781,8 +780,6 @@
 
 // console.log(arr);
 // console.log("count of unique element ->", j);
-
-
 
 //best time to buy sell stock.............
 
@@ -802,4 +799,27 @@
 
 //     }
 //     return ans;
-//   }  
+//   }
+
+//prepinsta.com/top-100-codes//.................................
+
+// Positive or Negative number:
+
+//sorting...................
+//bubble sorting.................
+
+let arr = [5, 10, 12, 13, 1];
+let n = arr.length;
+
+for (i = 0; i < n - 1; i++) {
+  for (j = 0; j < n - 1 - i; j++) {
+    if (arr[j] > arr[j + 1]) {
+      temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+}
+
+console.log(arr);
+
