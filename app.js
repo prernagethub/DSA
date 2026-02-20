@@ -823,21 +823,69 @@
 
 //...............................Selection Sorting........................................
 
-let arr = [5, 10, 12, 13, 1];
-let n = arr.length;
+// let arr = [5, 10, 12, 13, 1];
+// let n = arr.length;
 
-for (i = 0; i < n - 1; i++) {
-  let minIndex = i;
-  for (j = i + 1; j < n; j++) {
-    if (arr[minIndex] > arr[j]) minIndex = j;
-  }
-  if (minIndex != i) {
-    let temp = arr[minIndex];
-    arr[minIndex] = arr[i];
-    arr[i] = temp;
-  }
-}
+// for (i = 0; i < n - 1; i++) {
+//   let minIndex = i;
+//   for (j = i + 1; j < n; j++) {
+//     if (arr[minIndex] > arr[j]) minIndex = j;
+//   }
+//   if (minIndex != i) {
+//     let temp = arr[minIndex];
+//     arr[minIndex] = arr[i];
+//     arr[i] = temp;
+//   }
+// }
 
-console.log(arr);
+// console.log(arr);
 
+//...................................insertion sorting................................
 
+// let arr = [5, 10, 12, 13, 1];
+// let n = arr.length;
+// for (i = 1; i < n; i++) {
+//   key = arr[i];
+//   j = i - 1;
+//   while (j >= 0 && arr[j] > key) {
+//     arr[j + 1] = arr[j];
+//     j--;
+//   }
+
+//   arr[j + 1] = key;
+// }
+
+// console.log(arr);
+
+//.....................recursion..........................
+
+// function temp(n) {
+//   if (n == 0 ) return;
+//   console.log("n to 1 numbers are...:-",n);
+//   temp(--n); //predcrement
+//   // temp(n--) post-Decreament
+// }
+
+// temp(5);
+
+// 1 to 10 using recursion.......................................
+
+// function temp(n) {
+//   if (n == 0) return;
+//   temp(n - 1);
+//   console.log(n);
+// }
+
+// temp(10);
+
+// 🎯 Important Concept: Stack (LIFO)
+
+// Recursion Stack pe kaam karta hai (Last In First Out).
+
+// Pehle saare calls stack me push ho gaye.
+
+// Fir ek ek karke reverse order me bahar aaye.
+
+// Isliye 1 se 10 print hua.
+
+//................
