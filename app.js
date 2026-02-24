@@ -888,4 +888,37 @@
 
 // Isliye 1 se 10 print hua.
 
-//................
+//................factorial using recursion.......................
+
+// function factorial(n) {
+//   if (n === 0) return 1;
+//   return n * factorial(n - 1);
+// }
+
+// console.log(factorial(5));
+
+//.............gcd..............................
+
+// function gcd(a, b) {
+//   if (a === b) return a;
+//   if (a > b) return gcd(b, a - b);
+//   return gcd(b, b - a);
+// }
+
+// console.log(gcd(32, 20));
+
+//..............................var, let , const , function...............
+
+console.log(a);
+var a = 12;
+
+// console.log(b);
+// let b = 12;
+
+// console.log(c);
+// const c = 12;
+
+// console.log(greet(3, 4));
+// function greet(a, b) {
+//   return a + b;
+// }
