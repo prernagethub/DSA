@@ -909,8 +909,8 @@
 
 //..............................var, let , const , function...............
 
-console.log(a);
-var a = 12;
+// console.log(a);
+// var a = 12;
 
 // console.log(b);
 // let b = 12;
@@ -922,3 +922,55 @@ var a = 12;
 // function greet(a, b) {
 //   return a + b;
 // }
+
+//........................splice..........................
+
+// let words = ["f", "4", "5"];
+// //add x and y start from index 1
+// words.splice(1, 0, "x", "y"); //start, deleteElements, addition
+// console.log(words);
+// //output- ['f', 'x', 'y', '4', '5']
+
+// //remove one element start from index 1
+// words.splice(1, 1);
+// console.log(words);
+// //output-['f', 'y', '4', '5']
+
+// //replace 1 element start from index 2
+// words.splice(2, 1, "3");
+// console.log(words);
+//output-['f', 'y', '3', '5']
+
+//array like objects.............................
+// sum(1, 2, 3);
+
+// function sum() {
+//   console.log(arguments);
+//   console.log(arguments.length);
+//   console.log(arguments[0]);
+// }
+
+//..............binary search...................................
+
+arr = [10, 25, 38, 41, 55, 63, 79, 83, 98, 134];
+target = 98;
+
+function binary(arr, target) {
+  let first = 0;
+  let last = arr.length - 1;
+
+  while (first <= last) {
+    let middle = Math.floor((first + last) / 2);
+
+    if (arr[middle] === target) {
+      return middle;
+    } else if (arr[middle] > target) {
+      last = middle - 1;
+    } else {
+      first = middle + 1;
+    }
+  }
+  return -1;
+}
+
+console.log(binary(arr, target));
