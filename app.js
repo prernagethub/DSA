@@ -832,15 +832,17 @@
 //     if (arr[minIndex] > arr[j]) minIndex = j;
 //   }
 //   if (minIndex != i) {
-//     let temp = arr[minIndex];
-//     arr[minIndex] = arr[i];
-//     arr[i] = temp;
+//     // let temp = arr[minIndex];
+//     // arr[minIndex] = arr[i];
+//     // arr[i] = temp;
+//     //other way to write it down..... destruturing...
+//     [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
 //   }
 // }
 
 // console.log(arr);
 
-//...................................insertion sorting................................
+//...................................Insertion Sorting................................
 
 // let arr = [5, 10, 12, 13, 1];
 // let n = arr.length;
@@ -952,25 +954,79 @@
 
 //..............binary search...................................
 
-arr = [10, 25, 38, 41, 55, 63, 79, 83, 98, 134];
-target = 98;
+// Binary Search ek searching algorithm hai jo sorted array par kaam karta hai.
+// Har step me array ko half kar deta hai — isi liye ye bahut fast hota hai.
 
-function binary(arr, target) {
-  let first = 0;
-  let last = arr.length - 1;
+// 👉 Time Complexity: O(log n)
+// 👉 Condition: Array sorted hona chahiye
 
-  while (first <= last) {
-    let middle = Math.floor((first + last) / 2);
+// arr = [10, 25, 38, 41, 55, 63, 79, 83, 98, 134];
+// target = 98;
 
-    if (arr[middle] === target) {
-      return middle;
-    } else if (arr[middle] > target) {
-      last = middle - 1;
-    } else {
-      first = middle + 1;
-    }
-  }
-  return -1;
-}
+// function binary(arr, target) {
+//   let first = 0;
+//   let last = arr.length - 1;
 
-console.log(binary(arr, target));
+//   while (first <= last) {
+//     let middle = Math.floor((first + last) / 2);
+
+//     if (arr[middle] === target) {
+//       return middle;
+//     } else if (arr[middle] > target) {
+//       last = middle - 1;
+//     } else {
+//       first = middle + 1;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(binary(arr, target));
+
+//...................deepCopy - shallowCopy......................
+//shallowCopy
+
+// const person = {
+//   name: "me",
+//   age: 43,
+//   address: {
+//     city: "bhopal",
+//     pincode: 462023,
+//   },
+// };
+
+// const cloneObj = Object.assign({}, person);
+// cloneObj.address.city = "banglore";
+// console.log(cloneObj.address.city);
+// console.log(person.address.city);
+
+// //deepCopy
+
+// const deepCopy = JSON.parse(JSON.stringify(person));
+// deepCopy.address.city = "indore";
+// console.log(deepCopy.address.city);
+// console.log(person.address.city);
+
+//....................set in js............
+
+//collection of unique values duplicates are not allowed
+
+const uniqueNumber = new Set();
+
+uniqueNumber.add(6);
+uniqueNumber.add(10);
+uniqueNumber.add(130);
+uniqueNumber.add(150);
+// uniqueNumber.add(6)
+uniqueNumber.delete(6);
+console.log(uniqueNumber.has(10));
+console.log(uniqueNumber);
+console.log(uniqueNumber.size);
+
+//for removing duplicate values
+
+let Arry = [2, 3, 4, 5, 2];
+console.log(Arry);
+
+let setArray = new Set(Arry);
+console.log(setArray);
