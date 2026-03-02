@@ -1011,22 +1011,24 @@
 
 //collection of unique values duplicates are not allowed
 
-const uniqueNumber = new Set();
+// const uniqueNumber = new Set();
 
-uniqueNumber.add(6);
-uniqueNumber.add(10);
-uniqueNumber.add(130);
-uniqueNumber.add(150);
-// uniqueNumber.add(6)
-uniqueNumber.delete(6);
-console.log(uniqueNumber.has(10));
-console.log(uniqueNumber);
-console.log(uniqueNumber.size);
+// uniqueNumber.add(6);
+// uniqueNumber.add(10);
+// uniqueNumber.add(130);
+// uniqueNumber.add(150);
+// // uniqueNumber.add(6)
+// uniqueNumber.delete(6);
+// console.log(uniqueNumber.has(10));
+// console.log(uniqueNumber);
+// console.log(uniqueNumber.size);
 
-//for removing duplicate values
+// //for removing duplicate values
 
-let Arry = [2, 3, 4, 5, 2];
-console.log(Arry);
+// let Arry = [2, 3, 4, 5, 2];
+// console.log(Arry);
 
-let setArray = new Set(Arry);
-console.log(setArray);
+// let setArray = new Set(Arry);
+// console.log(setArray);
+
+//..............................................
